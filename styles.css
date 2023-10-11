@@ -1,0 +1,158 @@
+body{
+    background-color: black; 
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track ,div.scroll-container{
+  background: black;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;     
+}
+
+                                /*for background video*/
+#myVideo {
+  min-width: 100%;
+}
+
+                                /*for buttons*/
+.content {
+  position: absolute;
+  bottom: 75%;
+  color: black;
+  width: 100%;
+}
+
+.btn {
+  background:transparent;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-family:Papyrus, fantasy;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.btn-con {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn:hover {
+  background-color:rgb(219, 213, 213);
+  color:black;
+  cursor: pointer;
+}   
+
+                                /*for scrolling image*/
+
+div.scroll-container{
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  border-radius: 30px;
+}
+img{
+    border-radius: 40px;
+}
+
+                                  /*css for form*/
+.justify{
+    align-content: center;
+}
+  
+.card {
+  width: 40%;
+  margin-left: 25%;
+  padding: 30px 90px 90px 90px;
+  border: 6px solid grey;
+  box-shadow: 20px 20px 0 grey;
+  border-radius: 50px;
+  position: relative;
+}
+
+.card h2 {
+  color: white;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.card .row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid: auto / auto auto;
+  grid-gap: 30px;
+}
+
+.card .row .col {
+  position: relative;
+  width: 100%;
+  margin: 30px 20px 40px 0;
+  transition: 0.5s;
+}
+
+.card .row .form-group input,
+.card .row .form-group textarea {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  font-family:Papyrus, fantasy;
+  box-shadow: 10px 10px 0 grey;
+  color:Black;
+}
+
+.card .row .form-group label {
+  line-height: 40px;
+  color: white;
+  font-size: 24px;
+  display: block;
+}
+
+.card .row input[type="submit"] {
+  padding: 10px;
+  height: 100%;
+  width: 50%;
+  background: transparent;
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  border-radius: 45px;
+  transition: all 0.4s;
+  box-shadow:10px 10px 0 grey;
+}
+
+                                /*for review section*/
+
+.review{
+  color: white;
+  font-family:Papyrus, fantasy;
+  font-size:50px;
+  text-align: center;
+}
+
+.para{
+  position: relative;
+  color: white;
+  text-align: center;
+  font-family:Papyrus, fantasy;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  padding: 20px;
+  font-size:20px;
+
+}
+
+                                /*for footer*/
+.text-center {
+  font-size: 20px;
+  text-align: center;
+  color:white;
+}
